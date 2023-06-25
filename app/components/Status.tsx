@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 
 const Status: React.FC = () => {
-  const [status, setStatus] = useState('')
+  const [status, setStatus] = useState('bg-zinc-600')
 
   const statuses: any = {
     offline: 'bg-zinc-600',
