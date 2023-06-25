@@ -19,7 +19,7 @@ interface UserProps {
 
 const Banner = () => {
   const calendar = 'https://calendar.app.google/hmZ5KPVCzzaYndVo6'
-  const whatsapp = "https://wa.me/005491123889341?text=What's up, bro?"
+  const whatsapp = "https://wa.me/+5491123889341?text=What's up, bro?"
   const instagram = 'https://www.instagram.com/joeverlt/'
   const linkedin = 'https://www.linkedin.com/in/joel-crespo-83ab7716a/'
   const twitch = 'https://www.twitch.tv/joeverlt'

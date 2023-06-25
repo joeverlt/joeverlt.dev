@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 
-export default function ProjectPage() {
+export default function ExperiencesPage() {
   const projects = [
     {
       url: 'http://horneroprop.com',
@@ -26,18 +26,14 @@ export default function ProjectPage() {
   return (
     <div className="text-zinc-400 h-full overflow-auto pr-2">
       <h2 className="px-4 py-4 text-zinc-700 dark:text-zinc-300 border-b border-zinc-400 dark:border-zinc-800">
-        Projects
+        My eye-opening escapades
       </h2>
 
       <div className="text-sm my-3 grid grid-cols-1 gap-4">
         {projects.map((project, index) => (
           <div key={index} className="flex flex-col gap-1 w-full">
             <div className="flex items-center justify-between w-full">
-              <a
-                href="https://sandbox.game"
-                target="_blank"
-                className="text-blue-500"
-              >
+              <a href={project.url} target="_blank" className="text-blue-500">
                 🌐 &middot; {project.url}
               </a>
               <span

@@ -4,12 +4,8 @@ import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import classNames from 'classnames'
 import ThemeSelector from './ThemeSelector'
-import {
-  FaHouseChimneyUser,
-  FaCircleInfo,
-  FaCubes,
-  FaMessage
-} from 'react-icons/fa6'
+import { FaHouseChimneyUser, FaCircleInfo, FaCubes } from 'react-icons/fa6'
+import { RxGlobe } from 'react-icons/rx'
 import { IconType } from 'react-icons'
 
 interface Route {
@@ -24,24 +20,24 @@ const Header: React.FC = () => {
 
   const routes: Route[] = [
     {
-      label: 'Home',
+      label: 'The Rundown',
       route: '/',
       icon: FaHouseChimneyUser
     },
     {
-      label: 'About me',
+      label: 'The Inside Scoop on Me',
       route: '/about',
       icon: FaCircleInfo
     },
     {
-      label: 'Projects',
-      route: '/projects',
-      icon: FaCubes
+      label: 'My Eye-Opening Escapades',
+      route: '/experiences',
+      icon: RxGlobe
     },
     {
-      label: 'Contact',
-      route: '/contact',
-      icon: FaMessage
+      label: 'My Side Hustles',
+      route: '/toys',
+      icon: FaCubes
     }
   ]
 
