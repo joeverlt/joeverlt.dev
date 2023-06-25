@@ -9,7 +9,7 @@ export default function ToysPage() {
 
       <div className="flex w-full py-8 items-center justify-center gap-2">
         <FaUtensils className="text-lg" />
-        <span className="text-sm">Still cookin', stay tuned...</span>
+        <span className="text-sm">{"Still cookin', stay tuned..."}</span>
       </div>
     </div>
   )
