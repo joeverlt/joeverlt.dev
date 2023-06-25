@@ -23,7 +23,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
     <html lang="en" className="dark" style={{ colorScheme: 'dark' }}>
       <body className={'bg-zinc-100 dark:bg-zinc-800 ' + ubuntu.className}>
         <Providers>
-          <main className="p-4 md:p-0 h-screen m-auto container flex flex-col md:flex-row items-center justify-between gap-1 md:gap-8">
+          <main className="overflow-y-auto md:overflow-y-hidden p-4 md:p-0 h-screen m-auto container flex flex-col md:flex-row items-center justify-between gap-1 md:gap-8">
             <Welcome />
             <Curriculum>{children}</Curriculum>
           </main>

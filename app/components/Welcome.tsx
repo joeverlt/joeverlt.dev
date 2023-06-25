@@ -5,7 +5,7 @@ const Welcome: React.FC = () => {
   const texts = [
     'senior web developer. 💻',
     'part-time gamer. 🎮',
-    'rookie dad. 👨‍👦',
+    'rookie dad. 👶',
     'caribbean surfer. 🌊',
     'casual doodler. 🎨',
     'big animal lover. 🐶',
