@@ -37,22 +37,16 @@ const Typing: React.FC<TypingProps> = ({
           setTypedText(nextTypedText)
         }
       }
-    }, 100) // Tiempo entre cada letra escrita (ajusta según tus preferencias)
+    }, 500)
+
+    setInterval(() => {
+      setCursorVisible((prevCursorVisible) => !prevCursorVisible)
+    }, 500)
 
     return () => {
       clearTimeout(timer)
     }
   }, [currentIndex, texts, typedText, loop, timeBetweenTexts])
-
-  useEffect(() => {
-    const cursorTimer = setInterval(() => {
-      setCursorVisible((prevCursorVisible) => !prevCursorVisible)
-    }, 500) // Tiempo de parpadeo del cursor (ajusta según tus preferencias)
-
-    return () => {
-      clearInterval(cursorTimer)
-    }
-  }, [])
 
   return (
     <div>
