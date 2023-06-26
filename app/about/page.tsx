@@ -26,17 +26,17 @@ export default function AboutPage() {
       </p>
       <p className="text-sm mb-3 text-zinc-500 dark:text-zinc-400">
         {
-          'Full-stack web developer with over 7 years of experience, graduated in Computer Engineering from the Universidad Politécnica Territorial de Paria. Recognized for achieving one of the top projects in my graduating class. My core skills include analysis and research in technology and development.'
+          "Full-stack web developer with over 7 years of experience, graduated in Computer Engineering. I've got a knack for diving deep into technology and development, always analyzing and researching to stay ahead of the game."
         }
       </p>
       <p className="text-sm mb-3 text-zinc-500 dark:text-zinc-400">
         {
-          'I am known for writing clean, readable, and maintainable code, with exceptional attention to detail. My main focus is delivering a high-quality user experience, prioritizing usability and intuitive interfaces in my projects.'
+          'One thing that sets me apart is my obsession with writing clean, readable, and maintainable code. I pay attention to the tiniest details and take pride in delivering a top-notch user experience. Usability and intuitive interfaces are my bread and butter in every project I tackle.'
         }
       </p>
       <p className="text-sm text-zinc-500 dark:text-zinc-400">
         {
-          'In summary, I am a full-stack web developer with a solid academic background, experience in various technologies, and skills in graphic design. My expertise in design patterns and integration with RESTful and GraphQL APIs allows me to create efficient and high-quality solutions.'
+          "To sum it up, I'm a full-stack web developer with a solid academic foundation, a diverse skill set in various technologies, and even a touch of graphic design wizardry."
         }
       </p>
       <h2 className="py-4 text-zinc-700 dark:text-zinc-300">Skills</h2>
