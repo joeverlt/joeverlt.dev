@@ -37,7 +37,7 @@ const Typing: React.FC<TypingProps> = ({
           setTypedText(nextTypedText)
         }
       }
-    }, 200)
+    }, 100)
 
     setInterval(() => {
       setCursorVisible((prevCursorVisible) => !prevCursorVisible)
