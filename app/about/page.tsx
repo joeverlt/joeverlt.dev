@@ -31,7 +31,7 @@ export default function AboutPage() {
       </p>
       <p className="text-sm mb-3 text-zinc-500 dark:text-zinc-400">
         {
-          'One thing that sets me apart is my obsession with writing clean, readable, and maintainable code. I pay attention to the tiniest details and take pride in delivering a top-notch user experience. Usability and intuitive interfaces are my bread and butter in every project I tackle.'
+          'One thing that sets me apart is my obsession with writing clean, readable, and maintainable code. I pay attention to the tiniest details and take pride in delivering a top-notch user experience.'
         }
       </p>
       <p className="text-sm text-zinc-500 dark:text-zinc-400">
