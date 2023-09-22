@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { useEffect, useState } from 'react'
 import { FaTwitch } from 'react-icons/fa6'
 import { HiCalendar } from 'react-icons/hi'
@@ -10,11 +10,13 @@ import {
   RiWhatsappFill
 } from 'react-icons/ri'
 import Status from './Status'
+import { usePathname } from 'next/navigation'
+import avatar from '../avatar.png'
 
 interface UserProps {
   name: string
   email: string
-  image: string
+  image: StaticImageData
 }
 
 const Banner = () => {
@@ -24,30 +26,30 @@ const Banner = () => {
   const linkedin = 'https://www.linkedin.com/in/joel-crespo-83ab7716a/'
   const twitch = 'https://www.twitch.tv/joeverlt'
   const [bgImage, setBgImage] = useState('')
-
-  const backgrounds = [
-    'bg-img-0',
-    'bg-img-1',
-    'bg-img-2',
-    'bg-img-3',
-    'bg-img-4',
-    'bg-img-5',
-    'bg-img-6',
-    'bg-img-7',
-    'bg-img-8'
-  ]
+  const path = usePathname()
 
   const user: UserProps = {
     name: 'Joel Crespo',
     email: 'joelcrespo.developer@gmail.com',
-    image:
-      'https://media.licdn.com/dms/image/D4D03AQGDI2v0c7t1dA/profile-displayphoto-shrink_800_800/0/1684763916285?e=1692835200&v=beta&t=OhVpC1s3abPUFHmdib1RSseWihwXIHa8edDo3kHZH1c'
+    image: avatar
   }
 
   useEffect(() => {
+    console.log(path)
+    const backgrounds = [
+      'bg-img-0',
+      'bg-img-1',
+      'bg-img-2',
+      'bg-img-3',
+      'bg-img-4',
+      'bg-img-5',
+      'bg-img-6',
+      'bg-img-7',
+      'bg-img-8'
+    ]
     const bg: any = backgrounds[Math.floor(Math.random() * backgrounds.length)]
     setBgImage(bg)
-  })
+  }, [path])
 
   return (
     <div

@@ -8,6 +8,7 @@ interface TypingProps {
   timeBetweenTexts?: number
   loop: boolean
 }
+
 const Typing: React.FC<TypingProps> = ({
   prefix,
   texts,
@@ -17,7 +18,6 @@ const Typing: React.FC<TypingProps> = ({
 }) => {
   const [typedText, setTypedText] = useState('')
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [cursorVisible, setCursorVisible] = useState(true)
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -39,13 +39,7 @@ const Typing: React.FC<TypingProps> = ({
       }
     }, 100)
 
-    setInterval(() => {
-      setCursorVisible((prevCursorVisible) => !prevCursorVisible)
-    }, 500)
-
-    return () => {
-      clearTimeout(timer)
-    }
+    return () => clearTimeout(timer)
   }, [currentIndex, texts, typedText, loop, timeBetweenTexts])
 
   return (
@@ -53,7 +47,7 @@ const Typing: React.FC<TypingProps> = ({
       {prefix}
       <span className="text-blue-500">
         {typedText}
-        {cursorVisible && <span className="terminal-cursor"></span>} {suffix}
+        {suffix}
       </span>
     </div>
   )

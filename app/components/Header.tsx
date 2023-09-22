@@ -20,12 +20,12 @@ const Header: React.FC = () => {
 
   const routes: Route[] = [
     {
-      label: 'The Rundown',
+      label: 'Summary',
       route: '/',
       icon: FaHouseChimneyUser
     },
     {
-      label: 'The Inside Scoop on Me',
+      label: 'About me',
       route: '/about',
       icon: FaCircleInfo
     },
